@@ -6,10 +6,13 @@ import Jumbotron from '../components/jumbotron'
 import ImageDivider from '../components/imageDivider'
 import { Section, TravelSection, LocationSection, LodgingSection, MontanaSection, RegistrySection, RSVPSection } from '../components/section'
 
+const SectionSpacer = ({}) => 
+	<span className='section_anchor'></span>
+
 const LandingPageContainer = () =>
 	<div>
 		<Navbar />
-		<div className='content' data-spy='scroll' data-target='#weddingNav' data-offset='62'>
+		<div className='content'>
 			<Jumbotron />
 			<Section id='location' padding={true}>
 				<LocationSection />
@@ -21,10 +24,10 @@ const LandingPageContainer = () =>
 			<Section id='lodging' padding={false}>
 				<LodgingSection />
 			</Section>
+			<ImageDivider image='missoula'/>
 			<Section id='montana' padding={false}>
 				<MontanaSection />
 			</Section>
-			<ImageDivider image='stone_tower_estate'/>
 			<Section id='registry' padding={false}>
 				<RegistrySection />
 			</Section>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Anchor from './anchor'
 
 const SectionHeader = ({text}) =>
 	<div className='section_header'>
@@ -9,7 +10,8 @@ const SectionHeader = ({text}) =>
 	</div>
 
 export const Section = (props) =>
-	<section id={props.id ? props.id : ''} className={props.padding ? 'section_padding d-flex h-100 flex-grow ' : 'd-flex h-100 flex-grow '}>
+	<section className={props.padding ? 'section_padding d-flex h-100 flex-grow ' : 'd-flex h-100 flex-grow '}>
+		<Anchor id={props.id ? props.id : ''} />
 		<div className='container'>
 			<div className='row'>
 				{props.children}

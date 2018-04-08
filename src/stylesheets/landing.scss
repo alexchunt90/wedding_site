@@ -18,6 +18,10 @@ html body {
     position: relative;
 }
 
+#weddingNav {
+	background-color: $bg_color !important;
+}
+
 #navbarItems > .navbar-nav > .nav-item > a.active {
 	color: $active_color;
 	text-shadow: rgba(104, 61, 5, .2) 0 0 1px;
@@ -63,6 +67,15 @@ h4 {
 	margin: 0 auto;
 }
 
+.jumbotron_contents > h3 {
+	font-family: 'Times New Roman, serif'
+}
+
+
+.jumbotron_contents > h4 {
+	font-family: 'Times New Roman, serif'
+}
+
 .parallax-window {
     background-color: rgba(153, 88, 3, .5);
 }
@@ -71,9 +84,18 @@ h4 {
     flex: 1 0 auto;
 }
 
+span.anchor {
+    margin-top: -62px;
+    display: block;
+    height: 62px;
+    visibility: hidden;
+    position: relative;
+}
+
 section {
 	background-color: $bg_color;
-	padding: 50px 0 10px 0;
+	border-top: 1px solid black;
+	padding: 0px 0 10px 0;
 }
 
 .section_divider {
@@ -82,10 +104,6 @@ section {
     display: block;
     width: 35px;
     height: 2px;
-}
-
-.section_padding {
-    padding: 130px 0;
 }
 
 .section_contents {
@@ -97,4 +115,8 @@ section {
 		font-size: 1.5em;
 		font-family: 'Times New Roman, serif'
 	}
+}
+
+.anchor_tag {
+	margin-top: -62px;
 }
