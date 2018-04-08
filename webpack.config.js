@@ -19,7 +19,7 @@ module.exports = {
     	path: path.resolve(__dirname, 'static/js/')
 	},
     devServer: {
-		contentBase: 'views/',
+		contentBase: '.',
 		hot: true
     },	
 	watch: true,

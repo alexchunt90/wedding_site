@@ -1,8 +1,8 @@
- import React from 'react'
+import React from 'react'
 
 const Navbar = () =>
-	<nav className='navbar navbar-expand-md navbar-light bg-light'>
-		<a className='navbar-brand' href='#home' data-id='home'>Alex & Meg</a>
+	<nav id='weddingNav' className='navbar navbar-expand-md navbar-light bg-light fixed-top'>
+		<a className='navbar-brand nav-link' id='navbar_home_link' href='#home'>Meg & Alex</a>
 		<button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarItems'>
 			<span className='navbar-toggler-icon'></span>
 		</button>
@@ -10,24 +10,25 @@ const Navbar = () =>
 		<div id='navbarItems' className='collapse navbar-collapse'>
 			<ul className='navbar-nav ml-auto'>
 				<li className='nav-item'>
-					<a className='nav-link' href='/notes'>Travel</a>
+					<a className='nav-link' href='#location'>Location</a>
 				</li>
 				<li className='nav-item'>
-					<a className='nav-link' href='/notes'>Accomodations</a>
+					<a className='nav-link' href='#travel'>Travel</a>
+				</li>
+				<li className='nav-item'>
+				<a className='nav-link' href='#lodging'>Lodging</a>
 				</li>		      	
 				<li className='nav-item'>
-					<a className='nav-link' href='/notes'>Missoula</a>
+					<a className='nav-link' href='#montana'>Montana</a>
 				</li>		      									
 				<li className='nav-item'>
-					<a className='nav-link' href='/edit'>Registry</a>
+					<a className='nav-link' href='#registry'>Registry</a>
 				</li>
 				<li className='nav-btn'>
-					<a className='nav-link' href='/edit'>RSVP</a>
+					<a className='nav-link' href='#rsvp'>RSVP</a>
 				</li>				
 			</ul>
 		</div>
 	</nav>
-
-const string = "<li className='nav-item'><a className='nav-link' href='/search'>Search</a></li><li className='nav-item'><a className='nav-link' href='/about'>About</a></li>"
 
 export default Navbar
