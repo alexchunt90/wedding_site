@@ -1,11 +1,13 @@
-- Countdown Counter
+# Wire Up Redux State for Countdown
+# Parallax Scrolling Images
+# Icon
+
 - Flight Information
 - Hotel Information
 - Transportation Info
 - Missoula Info
 	- Sign-up Box?
 - Registry Info
-
 
 How to get to the ceremony
 What time it starts
