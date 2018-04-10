@@ -19,7 +19,7 @@ const Navbar = () =>
 				<a className='nav-link' href='#lodging'>Lodging</a>
 				</li>		      	
 				<li className='nav-item'>
-					<a className='nav-link' href='#montana'>Montana</a>
+					<a className='nav-link' href='#missoula'>Missoula</a>
 				</li>		      									
 				<li className='nav-item'>
 					<a className='nav-link' href='#registry'>Registry</a>

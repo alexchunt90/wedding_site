@@ -14,24 +14,26 @@ const LandingPageContainer = () =>
 		<Navbar />
 		<div className='content'>
 			<Jumbotron />
-			<Section id='location' padding={true}>
+			<Section id='location' height={100}>
 				<LocationSection />
 			</Section>
 			<ImageDivider image='stone_tower_estate'/>
-			<Section id='travel' padding={false}>
+			<Section id='travel' height={50}>
 				<TravelSection />
 			</Section>
-			<Section id='lodging' padding={false}>
+			<ImageDivider image='us_1'/>
+			<Section id='lodging' height={100}>
 				<LodgingSection />
 			</Section>
-			<ImageDivider image='missoula'/>
-			<Section id='montana' padding={false}>
+			<ImageDivider image='missoula' offsetY={-100}/>
+			<Section id='missoula' height={100}>
 				<MontanaSection />
 			</Section>
-			<Section id='registry' padding={false}>
+			<ImageDivider image='us_2'/>
+			<Section id='registry' height={50}>
 				<RegistrySection />
 			</Section>
-			<Section id='rsvp' padding={false}>
+			<Section id='rsvp' height={100}>
 				<RSVPSection />
 			</Section>						
 		</div>

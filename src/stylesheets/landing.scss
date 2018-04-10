@@ -67,13 +67,16 @@ h4 {
 	margin: 0 auto;
 }
 
-.jumbotron_contents > h3 {
-	font-family: 'Times New Roman, serif'
-}
-
-
-.jumbotron_contents > h4 {
-	font-family: 'Times New Roman, serif'
+.jumbotron_contents {
+	h1 {
+		font-weight: 100;
+	}
+	h3 {
+		font-family: 'Times New Roman, serif'
+	}
+	h4 {
+		font-family: 'Times New Roman, serif'
+	}
 }
 
 .parallax-window {
@@ -94,8 +97,7 @@ span.anchor {
 
 section {
 	background-color: $bg_color;
-	border-top: 1px solid black;
-	padding: 0px 0 10px 0;
+	padding: 120px 0 10px 0;
 }
 
 .section_divider {
@@ -113,10 +115,37 @@ section {
 .section_header {
 	h4 {
 		font-size: 1.5em;
-		font-family: 'Times New Roman, serif'
+		font-family: 'Times New Roman, serif';
+		color: $header_color;
 	}
 }
 
 .anchor_tag {
-	margin-top: -62px;
+	margin-top: -262px;
+}
+
+//
+// Images
+//
+
+#image_ste_inline {
+	border-radius: 50%;
+	border: .3em double $border_color;
+}
+
+.section_image > img{
+	max-height: 60%;
+	max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;	
+}
+
+//
+// Registry Icons
+// 
+
+.registry_box {
+	height: 100%;
+	background-color: rgba(150, 150, 155, 0.6);
 }
