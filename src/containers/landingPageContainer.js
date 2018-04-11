@@ -30,12 +30,13 @@ const LandingPageContainer = () =>
 				<MontanaSection />
 			</Section>
 			<ImageDivider image='us_2'/>
-			<Section id='registry' height={50}>
+			<Section id='registry' height={100}>
 				<RegistrySection />
 			</Section>
-			<Section id='rsvp' height={100}>
+			<ImageDivider image='missoula2' offsetY={40}/>
+			<Section id='rsvp' height={50}>
 				<RSVPSection />
-			</Section>						
+			</Section>			
 		</div>
 	</div>
 

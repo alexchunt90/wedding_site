@@ -25,7 +25,7 @@ const Navbar = () =>
 					<a className='nav-link' href='#registry'>Registry</a>
 				</li>
 				<li className='nav-btn'>
-					<a className='nav-link' href='#rsvp'>RSVP</a>
+					<a className='btn btn-primary' href='https://goo.gl/forms/qBelsfhaRcvL2d4j2' target='_blank'>RSVP</a>
 				</li>				
 			</ul>
 		</div>

@@ -2,9 +2,6 @@ const webpack = require('webpack')
 const path = require('path')
 
 const rootAssetPath = './src/'
-let pathsToClean = [
-  'static/js'
-]
 
 module.exports = {
 	entry: {
@@ -17,15 +14,6 @@ module.exports = {
 		publicPath: '/static/js/',
     	filename: '[name].js',
     	path: path.resolve(__dirname, 'static/js/')
-	},
-    devServer: {
-		contentBase: '.',
-		hot: true
-    },	
-	watch: true,
-	watchOptions: {
-		poll: true,
-		ignored: /node_modules/
 	},
 	module : {
 		rules: [
@@ -41,16 +29,21 @@ module.exports = {
 		},
 		{
 			test: /\.(png)$/,
+			exclude: /node_modules/,
 			use: {
 				loader: 'file-loader'
 			}
 		},
 		{
 		    test: /\.(scss)$/,
+		    exclude: /node_modules/,
 		    use: [{
 		    	loader: 'style-loader', // inject CSS to page
 		    }, {
 		    	loader: 'css-loader', // translates CSS into CommonJS modules
+		    	options: {
+		    		minimize: true
+		    	}
 		    }, {
 		    	loader: 'postcss-loader', // Run post css actions
 		    	options: {
@@ -65,13 +58,11 @@ module.exports = {
 	    }
     ]},
 	plugins: [
-		// TODO: Dev / Prod Config
-		// new webpack.optimize.UglifyJsPlugin(),
         new webpack.ProvidePlugin({
 	        $: 'jquery',
 	        jQuery: 'jquery',
 	        'window.jQuery': 'jquery',
-	        Popper: ['popper.js', 'default']        	
+	        Popper: ['popper.js', 'default']
         }),
 		new webpack.NamedModulesPlugin(),
 		new webpack.HotModuleReplacementPlugin()        

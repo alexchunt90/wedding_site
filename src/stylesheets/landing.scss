@@ -72,7 +72,8 @@ h4 {
 		font-weight: 100;
 	}
 	h3 {
-		font-family: 'Times New Roman, serif'
+		// font-family: 'Times New Roman, serif'
+		font-weight: 100;
 	}
 	h4 {
 		font-family: 'Times New Roman, serif'
@@ -97,12 +98,11 @@ span.anchor {
 
 section {
 	background-color: $bg_color;
-	padding: 120px 0 10px 0;
 }
 
 .section_divider {
     background-color: rgba(200, 200, 200, 0.5);
-    margin: 25px auto 25px auto;
+    margin: 5px auto 15px auto;
     display: block;
     width: 35px;
     height: 2px;
@@ -118,6 +118,17 @@ section {
 		font-family: 'Times New Roman, serif';
 		color: $header_color;
 	}
+}
+
+.section_body {
+	ul {
+		font-size: .9em;
+	}
+}
+
+#☭ {
+	font-size: .7em;
+	text-align: center;
 }
 
 .anchor_tag {
@@ -141,11 +152,75 @@ section {
     display: block;	
 }
 
+.hotel_header {
+	text-align: center;
+	font-size: 1rem;
+}
+
+.hotel_image {
+	max-width: 80%;
+	max-height: 80%;
+	margin: 0 auto;
+	img {
+		max-width: 72%;
+		max-height: 72%;	
+		margin: 0 auto;
+	    display: block;
+		border-radius: 50%;
+		border: .3em double $border_color;	
+	}
+}
+
 //
 // Registry Icons
 // 
 
 .registry_box {
 	height: 100%;
-	background-color: rgba(150, 150, 155, 0.6);
+	background-color: $registry_bg_color;
+	border: .3em double $border_color;
+	border-radius: 10%;
+	a {
+		display: block;
+	}
+	img {
+		margin: 0 auto;
+	}
 }
+
+.rsvp_box {
+	a {
+		display: block;
+		margin: 0 auto 50px auto;
+	}
+}
+
+// @media (min-width: 858px) {
+//     html {
+//         font-size: 12px;
+//     }
+// }
+
+// @media (min-width: 780px) {
+//     html {
+//         font-size: 11px;
+//     }
+// }
+
+// @media (min-width: 702px) {
+//     html {
+//         font-size: 10px;
+//     }
+// }
+
+// @media (min-width: 724px) {
+//     html {
+//         font-size: 9px;
+//     }
+// }
+
+// @media (max-width: 623px) {
+//     html {
+//         font-size: 8px;
+//     }
+// }

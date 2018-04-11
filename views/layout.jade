@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		script(async src='https://www.googletagmanager.com/gtag/js?id=UA-117247008-1')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-117247008-1');
+	body(data-spy='scroll', data-target='#weddingNav' data-offset='232')
+		block content
