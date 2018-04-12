@@ -5,3 +5,8 @@
 .DS_Store
 npm-debug.log
 .elasticbeanstalk/
+.ebextensions/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

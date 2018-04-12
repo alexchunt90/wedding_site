@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Node + React wedding website",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
     "dev": "rimraf static/js/ && webpack-dev-server --config webpack.dev.js --mode=development",
     "build": "rimraf static/js/ && webpack --config webpack.prod.js --mode=production",
