@@ -15,7 +15,7 @@ const SectionHeader = ({text}) =>
 	</div>
 
 export const Section = (props) =>
-	<section className={'section_padding d-flex h-' + props.height}>
+	<section id={'section_' + props.id} className={'section_padding d-flex h-' + props.height}>
 		<Anchor id={props.id ? props.id : ''} />
 		<div className='container d-flex align-self-center'>
 			<div className='row'>
@@ -29,15 +29,15 @@ export const LocationSection = () =>
 		<SectionHeader text='Location' />
 		<div className='section_body d-flex flex-row'>
 			<div className='p-2'>
-				<p>The ceremony, reception, and after-party will be held at Stone Tower Estate in Stevensville. The ceremony will start at 4:30PM, with a reception at 5:00PM and an after-party well into to the wee hours.</p>
-				<p>For lodging we recommend staying in our nearby hometown of Missoula. Shuttles will be provided to and from the venue.</p>
-				<p>The venue permits camping, so anyone who wants to celebrate with us past the last shuttle is welcome to sleep under the stars.</p>
+				<div>The ceremony, reception, and after-party will be held at Stone Tower Estate in Stevensville. The ceremony will start at 4:30PM, with a reception at 5:00PM and an after-party well into to the wee hours.</div>
+				<div>For lodging we recommend staying in our nearby hometown of Missoula. Shuttles will be provided to and from the venue.</div>
+				<div>The venue permits camping, so anyone who wants to celebrate with us past the last shuttle is welcome to sleep under the stars.</div>
 			</div>
 			<div className='p-2'>
 				<ImageBox id='ste_inline' />
 				<span className='section_divider' />
-				<p>680 Home Stretch Dr, Stevensville, MT 59870, USA</p>
-				<p><a href='https://goo.gl/maps/5ovZCGYMzhH2' target='_blank'>Open Map</a></p>
+				<div>680 Home Stretch Dr, Stevensville, MT 59870, USA</div>
+				<div><a href='https://goo.gl/maps/5ovZCGYMzhH2' target='_blank'>Open Map</a></div>
 			</div>
 		</div>
 	</div>
@@ -45,8 +45,10 @@ export const LocationSection = () =>
 export const TravelSection = () =>
 	<div className='section_contents'>
 		<SectionHeader text='Travel' />
-		<p>The nearest airport is Missoula International (MSO). Ticket prices tend to get pretty expensive, so if you're flying and haven't bought tickets yet, now is the time to start looking.</p>
-		<p>You can sometimes save some money by booking through <a href='http://flights.google.com' target='_blank'>Google Flights</a> and booking each leg with different airlines.</p>
+		<div className='section_body'>
+			<div>The nearest airport is Missoula International (MSO). Ticket prices tend to get pretty expensive, so if you're flying and haven't bought tickets yet, now is the time to start looking.</div>
+			<div>You can sometimes save some money by booking through <a href='http://flights.google.com' target='_blank'>Google Flights</a> and booking each leg with different airlines.</div>
+		</div>
 	</div>
 
 export const LodgingSection = () =>
@@ -56,8 +58,8 @@ export const LodgingSection = () =>
 			<div className='d-flex p-2'>For hotels, we recommend staying in Downtown Missoula. There's more to do and it's more walkable. </div>
 			<HotelBox name={hotelData.red_lion.name} image_src={hotelData.red_lion.image_src} gmaps_link={hotelData.red_lion.gmaps_link} site_link={hotelData.red_lion.site_link} text={hotelData.red_lion.text}/>
 			<HotelBox name={hotelData.holiday_inn.name} image_src={hotelData.holiday_inn.image_src} gmaps_link={hotelData.holiday_inn.gmaps_link} site_link={hotelData.holiday_inn.site_link} text={hotelData.holiday_inn.text}/>
-			<p>There are few more hotels downtown, like Comfort Inn and Campus Inn. We'll update here if we can arrange any more courtesy rates. There are also some hotels out near the airport, but the area is less walkable, so probably best for people already renting a car.</p>
-			<p>There are also a number of AirBnB and VRBO listings available, which might be the cheapest option.</p>
+			<div className='d-flex p-2'>There are few more hotels downtown, like Comfort Inn and Campus Inn. We'll update here if we can arrange any more courtesy rates. There are also some hotels out near the airport, but the area is less walkable, so probably best for people already renting a car.</div>
+			<div className='d-flex p-2'>There are also a number of AirBnB and VRBO listings available, which might be the cheapest option.</div>
 		</div>
 	</div>
 
@@ -108,7 +110,7 @@ export const MontanaSection = () =>
 				</div>				
 			</div>
 			<div className='p-2'>
-				<p>With some help from our family and friends, we're trying to set up a few outdoorsy outings, possibly white-water rafting or a hike with scenic views. If you're interested, <a href='mailto:alexandmegforever@gmail.com&subject=Montana Outings' target='_blank'>let us know!</a></p>
+				<div>With some help from our family and friends, we're trying to set up a few outdoorsy outings, possibly white-water rafting or a hike with scenic views. If you're interested, <a href='mailto:alexandmegforever@gmail.com&subject=Montana Outings' target='_blank'>let us know!</a></div>
 			</div>
 
 		</div>

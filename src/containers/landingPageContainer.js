@@ -25,7 +25,7 @@ const LandingPageContainer = () =>
 			<Section id='lodging' height={100}>
 				<LodgingSection />
 			</Section>
-			<ImageDivider image='missoula' offsetY={-100}/>
+			<ImageDivider image='missoula' offsetY={0}/>
 			<Section id='missoula' height={100}>
 				<MontanaSection />
 			</Section>
@@ -33,7 +33,7 @@ const LandingPageContainer = () =>
 			<Section id='registry' height={100}>
 				<RegistrySection />
 			</Section>
-			<ImageDivider image='missoula2' offsetY={40}/>
+			<ImageDivider image='missoula2' offsetY={0}/>
 			<Section id='rsvp' height={50}>
 				<RSVPSection />
 			</Section>			

@@ -18,7 +18,7 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+// app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, '/static')));
 // app.use('/static/js', express.static(path.join(__dirname, 'static/js')));
 // app.use('/static/icons', express.static(path.join(__dirname, 'static/icons')));
