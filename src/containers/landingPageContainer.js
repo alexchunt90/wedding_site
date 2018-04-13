@@ -33,10 +33,11 @@ const LandingPageContainer = () =>
 			<Section id='registry' height={100}>
 				<RegistrySection />
 			</Section>
-			<ImageDivider image='missoula2' offsetY={0}/>
+			<ImageDivider image='lilly' offsetY={0}/>
 			<Section id='rsvp' height={50}>
 				<RSVPSection />
-			</Section>			
+			</Section>
+			<ImageDivider image='missoula2' offsetY={0}/>
 		</div>
 	</div>
 
