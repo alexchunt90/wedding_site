@@ -144,7 +144,7 @@ export const RSVPSection = () =>
 					<div className='rsvp_box'>
 						<a className="btn btn-primary w-50" href='https://goo.gl/forms/qBelsfhaRcvL2d4j2' target='_blank'>RSVP</a>
 					</div>
-					<div>Please let us if you can make it know by June 20th, 2018, so we can be sure to have more than enough food and booze.</div>
+					<div>Please let us know if you can make it by June 20th, 2018, so we can be sure to have more than enough food and booze.</div>
 				</div>
 			</div>
 		</div>
