@@ -110,9 +110,11 @@ export const MontanaSection = () =>
 				</div>				
 			</div>
 			<div className='p-2'>
-				<div>With some help from our family and friends, we're trying to set up a few outdoorsy outings, possibly white-water rafting or a hike with scenic views. If you're interested, <a href='mailto:alexandmegforever@gmail.com&subject=Montana Outings' target='_blank'>let us know!</a></div>
+				<div>Thanks to David, who's organizing some outdoorsy activities, with possible options including whitewater rafting, scenic hikes and fishing.</div>
 			</div>
-
+			<div className='p-2'>
+				<div><strong>To Sign Up: </strong><a href='https://docs.google.com/forms/d/e/1FAIpQLScc1kM1_SYa2gOeE4AOQBrEm09P3Who-lkG09NwTJj2GCwNHg/viewform'>Click Here</a> to help us choose outings.</div>
+			</div>
 		</div>
 	</div>
 
